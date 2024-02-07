@@ -1,14 +1,20 @@
-(this code is not the most optimal way and is only for studing purposes across the services)
+# Change Data Capture (CDC) Example with PostgreSQL, Debezium, Kafka, Spark, and Delta
 
-Simple example of a cdc using postgres, debezium+kafka and spark+delta to create a cdc 
+This repository serves as a simple example of implementing Change Data Capture (CDC) using a stack comprising PostgreSQL, Debezium with Kafka, and Spark with Delta.
 
-how to run the example:
+## How to Run the Example
 
-- run  the startup.sh
-- create the two example tables inside postgres database exampledb in public schema  (you can connect in docker db directly, or use pgadmin in localhost:5000 to run the querys)
-- run ./comands-executed/request.sh to registrate this tables in kafka/debezium 
-- run the delta_postgres_cdc notebook to start the cdc
-- run some inserts, updates, and deletes to verify the cdc happening in the tables, enjoy !!
+Follow these steps to execute the example:
 
-You need to connect in jupyter remote session using the url that will show inside spark container when created ! 
+1. Run the `startup.sh` script.
+2. Create two example tables within the `exampledb` database in the public schema of PostgreSQL. Connect directly to the Dockerized database or use PgAdmin at localhost:5000 to execute the queries.
+3. Execute `./comands-executed/request.sh` to register these tables in Kafka/Debezium.
+4. Run the `delta_postgres_cdc` notebook to initiate the CDC process.
+5. Perform some inserts, updates, and deletes to observe the CDC events occurring in the tables. Enjoy!
+
+Ensure you connect to the Jupyter remote session using the URL displayed inside the Spark container upon creation.
+
+## How It Works
+
+[![demostration](http://img.youtube.com/vi/qb1ukrdbmXA/0.jpg)](https://youtu.be/qb1ukrdbmXA)
 
