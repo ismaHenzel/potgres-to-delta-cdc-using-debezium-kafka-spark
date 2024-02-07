@@ -1,0 +1,12 @@
+[
+    {
+        "Table": "exampledb.public.characters_dim",
+        "PrimaryKeys": ["character_id"],
+        "ProcessingTime": "5 seconds"
+    },
+    {
+        "Table": "exampledb.public.bounties_fact",
+        "PrimaryKeys": ["bounty_id"],
+        "ProcessingTime": "5 seconds"
+    }
+]

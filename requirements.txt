@@ -1,0 +1,4 @@
+pyspark==3.4.0
+delta-spark==2.4.0
+requests==2.31.0
+jupyter
